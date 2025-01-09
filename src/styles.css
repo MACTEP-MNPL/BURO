@@ -388,4 +388,153 @@ p {
     right: 15rem;
 }
 
+.sixth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sixth__container {
+    width: 70%;
+}
+
+.sixth__top {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.sixth__contacts {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    gap: 10px;
+    align-items: center;
+}
+
+.sixth__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F4F4F4;
+    border-radius: 2rem;
+
+    padding: .3rem 1rem;
+}
+
+.sixth__cell img {
+    width: 8rem;
+}
+
+.sixth__cell p {
+    font-size: 1rem;
+}
+
+.sixth__cell.yellow {
+    background: #FFC740;
+}
+
+.sixth__cell.yellow.padding{
+    padding: 2rem;
+    text-align: start;
+    align-items: start;
+    justify-content: start;
+
+    position: relative;
+
+    height: 100%;
+    width: 100%;
+}
+
+.sixth__cell.yellow.padding p {
+    width: 10rem;
+}
+
+.sixth__cell.yellow.padding img {
+    position: absolute;
+
+    right: -1rem;
+    top: 0;
+    width: 11rem;
+}
+
+.sixth__bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.sixth__reviews {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: start;
+
+    gap: 1rem;
+
+    background: #FFF1CF;
+
+    padding: 1.5rem;
+
+    border-radius: 2rem;
+
+    width: 15rem;
+}
+
+.review__top {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    width: 100%;
+    gap: .5rem;
+}
+
+.review__left {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.review__left img{
+    width: 2rem;
+}
+
+.review__right {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+
+    gap: .2rem;
+}
+
+.review__rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: .3rem;
+}
+
+.review__p {
+    width: 8rem;
+}
+
+
+
 
