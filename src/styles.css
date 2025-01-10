@@ -62,6 +62,12 @@ section {
     background: #ff9900;
 }
 
+a:hover {
+    color: #ff9900;
+
+    cursor: pointer;
+}
+
 li:hover {
     color: #ff9900;
 
@@ -533,6 +539,117 @@ p {
 
 .review__p {
     width: 8rem;
+}
+
+.seventh {
+    height: 30rem;
+
+    background: black;
+
+    border-radius: 2rem;
+
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    position: relative;
+
+    padding: 2.5rem 4rem;
+}
+
+.seventh__left {
+    display: flex;
+
+    justify-content: start;
+    align-items: start;
+
+    flex-direction: column;
+
+    width: 55%;
+    height: 100%;
+
+    gap: 6rem;
+}
+
+.seventh__top {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    flex-direction: column;
+
+    gap: 1rem;
+
+    position: relative;
+}
+
+.seventh__arrow {
+    width: 15rem;
+
+    position: absolute;
+
+    bottom: -5rem;
+    right: 6rem;
+}
+
+.seventh__right {
+    position: absolute;
+    width: 28rem;
+
+    right: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: start;
+
+
+    flex-direction: column;
+
+    background: black;
+
+    padding: 1rem 3rem;
+
+    color: white;
+
+    gap: 3rem;
+
+    height: 15rem;
+}
+
+.footer__top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 6rem;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 25rem;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__left {
+    text-align: start;
+}
+
+.footer__right {
+    text-align: end;
 }
 
 
