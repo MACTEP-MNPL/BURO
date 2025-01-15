@@ -1,29 +1,52 @@
 html {
-    font-size: 1.25rem;
+    font-size: 2rem; /* Default font size */
 }
 
 .gray {
     color: #797979;
 }
 
+/* Large screens */
+@media (max-width: 1700px) {
+    html {
+        font-size: 1.5rem; /* Adjust for medium-large screens */
+    }
+}
+
+
+@media (max-width: 1550px) {
+    html {
+        font-size: 1.3rem; /* Adjust for medium-large screens */
+    }
+}
+
+
+@media (max-width: 1300px) {
+    html {
+        font-size: 1.1rem; /* Adjust for medium-large screens */
+    }
+}
 
 @media (max-width: 1200px) {
     html {
-        font-size: 1rem; /* Medium screens */
+        font-size: 1rem; /* Adjust for medium-large screens */
     }
 }
 
+/* Tablets and small laptops */
 @media (max-width: 768px) {
     html {
-        font-size: 0.9rem; /* Tablets */
+        font-size: 0.7rem;
     }
 }
 
+/* Mobile screens */
 @media (max-width: 480px) {
     html {
-        font-size: 0.8rem; /* Mobile screens */
+        font-size: 0.5rem;
     }
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -609,7 +632,7 @@ footer {
 
     background: black;
 
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
 
     color: white;
 
