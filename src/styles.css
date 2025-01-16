@@ -27,26 +27,8 @@ section {
     height: 100vh;
 }
 
-@media (max-height: 1000px) {
-    section {
-        margin-top: 10rem;
-    }
-
-    footer {
-        margin-top: 10rem;
-    }
-}
 
 
-@media (max-height: 800px) {
-    section {
-        margin-top: 15rem;
-    }
-
-    footer {
-        margin-top: 15rem;
-    }
-}
 
 .no-top-margin {
     margin-top: 0;
@@ -57,13 +39,15 @@ section {
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    padding: 0.4rem 3rem;
+    padding: 0.4rem 1rem;
 
     background: #FFC740;
 
     border-radius: .3rem;
 
-    font-size: 1rem;
+    color: black;
+
+    font-size: 0.9rem;
 }
 
 .button:hover {
@@ -148,6 +132,11 @@ p {
     font-size: 0.8rem;
 }
 
+.first__section {
+    padding-top: 3rem;
+    height: 90vh;
+}
+
 .first {
     width: 100%;
     height: 100%;
@@ -194,6 +183,10 @@ p {
     right: 0;
 }
 
+.second__content {
+    height: 70vh;
+}
+
 .second__left {
     width: 28rem;
 }
@@ -215,7 +208,11 @@ p {
 
     position: absolute;
     right: 0;
-    top: 30%;
+    top: 17%;
+}
+
+.third__section {
+    height: 100vh;
 }
 
 .third {
@@ -277,6 +274,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.fourth__section {
+    height: 120vh;
 }
 
 .fourth {
@@ -363,6 +364,10 @@ p {
     gap: 1rem;
 }
 
+.fifth__section {
+    height: 100vh;
+}
+
 .fifth {
     display: flex;
     justify-content: start;
@@ -413,7 +418,7 @@ p {
 }
 
 .sixth__section {
-    height: 100vh;
+    height: 120vh;
 }
 
 .sixth {
@@ -565,6 +570,13 @@ p {
     width: 8rem;
 }
 
+.seventh__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .seventh {
     height: 30rem;
 
@@ -692,13 +704,16 @@ footer {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     html {
         font-size: 1rem; /* Adjust for medium-large screens */
     }
 }
 
 @media (max-width: 1100px) {
+    section {
+        height: 110vh;
+    }
     h2 {
         font-size: 2rem;
     }
@@ -745,7 +760,7 @@ footer {
     }
 
     .third__section {
-        height: 150vh;
+        height: 200vh;
     }
 
     .third {
@@ -786,7 +801,7 @@ footer {
     }
 
     .fourth__section {
-        height: 200vh;
+        height: 260vh;
     }
 
     .fourth__steps {
@@ -822,7 +837,6 @@ footer {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
     }
 
     .sixth__container {
@@ -830,7 +844,7 @@ footer {
     }
 
     .sixth__section {
-        height: 130vh;
+        height: 170vh;
     }
 
     .sixth__reviews {
@@ -975,6 +989,102 @@ footer {
 
     .seventh__right {
         display: none;
+    }
+}
+
+@media (max-width: 580px) {
+
+    html {
+        font-size: 0.75rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+
+    .first__section {
+        height: 100vh;
+    }
+
+    .second__section {
+        height: 60vh;
+    }
+
+    .second__content {
+        justify-content: center;
+    }
+
+    .third__section {
+        height: 90vh;
+    }
+
+    .fourth__section {
+        height: 170vh;
+    }
+
+    .fourth__container {
+        width: 100%;
+    }
+
+    .fourth__steps {
+        width: 100%;
+    }
+
+    .fourth__img{
+        width: 100%;
+        position: static;
+    }
+
+    .fourth__img img {
+        width: 20rem;
+    }
+
+    .fourth__steps {
+        gap: 3rem;
+    }
+
+    .fourth__step {
+        width: 100%;
+        height: 100%;
+        border-radius: 5rem;
+
+        padding: 4rem;
+    }
+
+    .fourth__step h3 {
+        font-size: 2.5rem;
+    }
+
+    .fourth__step p {
+        font-size: 1.5rem;
+    }
+
+    .fifth__section {
+        height: 50vh;
+    }
+
+    .sixth__section {
+        height: 100vh;
+    }
+
+    .sixth__cell p {
+        font-size: 1.5rem;
+    }
+
+    .sixth__cell.yellow.padding p {
+        width: 80%;
+    }
+
+    .seventh__section {
+        height: 35vh;
+    }
+
+    section {
+        height: 60vh;
     }
 }
 
