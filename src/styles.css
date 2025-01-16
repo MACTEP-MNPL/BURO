@@ -718,8 +718,12 @@ footer {
         font-size: 2rem;
     }
 
-    header {
-        display: none   ;
+    .header__body {
+        padding: 1rem 2rem;
+    }
+
+    .header__nav {
+        display: none;
     }
 
     footer {
@@ -1068,7 +1072,7 @@ footer {
     }
 
     .sixth__section {
-        height: 75grem;
+        height: 75rem;
     }
 
     .sixth__cell p {
