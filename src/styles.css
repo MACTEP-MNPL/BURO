@@ -944,7 +944,7 @@ footer {
     }
 
     .sixth__section {
-        height: 160vh;
+        height: 60rem;
     }
 
     .sixth__cell {
@@ -1031,7 +1031,7 @@ footer {
     }
 
     h2 {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
     }
 
     p {
@@ -1107,16 +1107,63 @@ footer {
         height: 60rem;
     }
 
+    
     .sixth__section {
-        height: 110rem;
+        height: 160rem;
+    }
+
+    .sixth__cell {
+        padding: .5rem;
+
+        border-radius: 3rem;
     }
 
     .sixth__cell p {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .sixth__cell.yellow.padding {
+        padding: 2rem 2rem;
+        border-radius: 3.5rem;
+    }
+
+    .sixth__cell.yellow.padding img {
+        width: 15rem;
+        bottom: -2rem;
+    }
+
+
+    .sixth__cell.sixth1 {
+        border-radius: 4rem;
+    }
+
+    .sixth__cell.sixth1 img {
+        width: 30rem;
+    }
+
+    .sixth__cell.sixth2 {
+        border-radius: 4rem;
+    }
+
+    .sixth__cell.sixth2 img {
+        width: 30rem;
     }
 
     .sixth__cell.yellow.padding p {
         width: 80%;
+    }
+
+    .sixth__contacts {
+        gap: 2rem;
+    }
+
+    .sixth__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 2rem;
     }
 
     .seventh__section {
@@ -1126,5 +1173,29 @@ footer {
 
     section {
         height: 60vh;
+    }
+
+    .sixth__reviews {
+        gap: 2rem;
+
+        padding: 0 4rem;
+    }
+
+    .review {
+        border-radius: 4rem;
+
+        padding: 2rem 3rem;
+
+        gap: 2rem;
+
+        height: 30rem;
+    }
+
+    .review__left img {
+        width: 4rem;
+    }
+
+    .review__right h3 {
+        font-size: 2.5rem;
     }
 }
