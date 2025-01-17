@@ -706,14 +706,14 @@ footer {
 /* Large screens */
 @media (max-width: 1800px) {
     html {
-        font-size: 1.5rem; /* Adjust for medium-large screens */
+        font-size: 1.4rem; /* Adjust for medium-large screens */
     }
 }
 
 
 @media (max-width: 1550px) {
     html {
-        font-size: 1.3rem; /* Adjust for medium-large screens */
+        font-size: 1.2rem; /* Adjust for medium-large screens */
     }
 }
 
