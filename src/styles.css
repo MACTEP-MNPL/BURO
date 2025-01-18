@@ -1097,6 +1097,8 @@ footer {
         border-radius: 5rem;
 
         padding: 4rem;
+
+        gap: 2rem;
     }
 
     .fourth__step h3 {
@@ -1197,5 +1199,21 @@ footer {
 
     .review__right h3 {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 420px) {
+    html {
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        font-size: .6rem;
+    }
+
+    .sixth__reviews {
+        padding: 0 2rem;
     }
 }
