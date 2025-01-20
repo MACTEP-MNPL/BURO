@@ -1,1 +1,6 @@
 .idea
+test-results
+browser.test.ts
+node_modules
+package-lock.json
+package.json

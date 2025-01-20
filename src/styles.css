@@ -18,6 +18,7 @@ html {
 
 * {
     transition-duration: .3s;
+    box-sizing: border-box;
 }
 
 ::selection {
@@ -441,8 +442,6 @@ p {
     padding-bottom: 2rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 .sixth {
@@ -452,7 +451,6 @@ p {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    width: 100%;
 }
 
 .sixth__container {
@@ -462,7 +460,6 @@ p {
     -webkit-flex-direction: column;
     flex-direction: column;
     gap: 2rem;
-    max-width: 100%;
 }
 
 .sixth__top {
@@ -476,15 +473,13 @@ p {
 }
 
 .sixth__contacts {
-    display: -webkit-grid;
+    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 10px 1fr 10px 2fr;
     grid-template-columns: repeat(2, 1fr) 2fr;
     gap: 10px;
     -webkit-align-items: center;
     align-items: center;
     width: 100%;
-    max-width: 100vw;
 }
 
 .sixth__cell {
@@ -756,6 +751,9 @@ footer {
 }
 
 @media (max-width: 1100px) {
+    html {
+        font-size: 1.3rem; /* Adjust for medium-large screens */
+    }
     section {
         height: 110vh;
     }
@@ -773,10 +771,6 @@ footer {
 
     footer {
         display: none;
-    }
-
-    html {
-        font-size: 1.5rem; /* Adjust for medium-large screens */
     }
 
     section {
@@ -980,45 +974,61 @@ footer {
     }
 
     .sixth__contacts {
-        display: -webkit-grid;
+        display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 10px 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
+        -webkit-align-items: center;
+        align-items: center;
         gap: 10px;
         width: 100%;
-        max-width: 100%;
-        padding: 0 1rem;
-        box-sizing: border-box;
     }
 
     .sixth__cell {
-        width: 100%;
-        height: auto;
-        min-height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        border-radius: 1rem;
     }
 
     .sixth__cell.yellow.padding {
-        grid-column: 1 / -1;
-        width: 100%;
-        box-sizing: border-box;
+        padding: 1rem;
     }
 
-    .sixth__cell img {
-        max-width: 100%;
-        height: auto;
-    }
+    .sixth__contacts {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+        grid-template-rows: auto auto auto; /* Three rows */
+        gap: 10px; /* Space between items */
+        align-items: center;
 
-    .sixth__cell.yellow.padding p {
         width: 100%;
     }
 
-    .sixth__cell.yellow.padding img {
-        width: 100%;
-        right: 0;
+    .sixth__contacts .sixth1 {
+        grid-row: 3; /* Place on the third row */
+        grid-column: 1; /* First column */
+    }
+
+    .sixth__contacts .sixth2 {
+        grid-row: 3; /* Place on the third row */
+        grid-column: 2; /* Second column */
+    }
+
+    .sixth__contacts .sixth3 {
+        grid-row: 1; /* Place on the first row */
+        grid-column: 1 / span 2; /* Span across both columns */
+    }
+
+    .sixth__contacts .sixth4 {
+        grid-row: 4; /* Place on the fourth row */
+        grid-column: 1; /* First column */
+    }
+
+    .sixth__contacts .sixth5 {
+        grid-row: 4; /* Place on the fourth row */
+        grid-column: 2; /* Second column */
+    }
+
+    .sixth__contacts .sixth6 {
+        grid-row: 2; /* Place on the second row */
+        grid-column: 1 / span 2; /* Span across both columns */
     }
 
     .seventh {
@@ -1241,23 +1251,5 @@ footer {
 
     .sixth__reviews {
         padding: 0 2rem;
-    }
-
-    .sixth__contacts {
-        gap: 8px;
-        padding: 0 0.5rem;
-    }
-
-    .sixth__cell {
-        min-height: 80px;
-    }
-
-    .sixth__cell.yellow.padding {
-        padding: 1rem;
-    }
-
-    .sixth__cell.yellow.padding img {
-        width: 40%;
-        right: 0;
     }
 }
