@@ -1002,44 +1002,40 @@ footer {
     }
 
     .sixth__contacts {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two equal columns */
-        grid-template-rows: auto auto auto; /* Three rows */
-        gap: 10px; /* Space between items */
-        align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "third third"
+        "sixth sixth"
+        "first second"
+        "fourth fifth";
+    gap: 10px;
+    width: 100%;
+}
 
-        width: 100%;
-    }
+.sixth__contacts .sixth1 {
+    grid-area: first;
+}
 
-    .sixth__contacts .sixth1 {
-        grid-row: 3; /* Place on the third row */
-        grid-column: 1; /* First column */
-    }
+.sixth__contacts .sixth2 {
+    grid-area: second;
+}
 
-    .sixth__contacts .sixth2 {
-        grid-row: 3; /* Place on the third row */
-        grid-column: 2; /* Second column */
-    }
+.sixth__contacts .sixth3 {
+    grid-area: third;
+}
 
-    .sixth__contacts .sixth3 {
-        grid-row: 1; /* Place on the first row */
-        grid-column: 1 / span 2; /* Span across both columns */
-    }
+.sixth__contacts .sixth4 {
+    grid-area: fourth;
+}
 
-    .sixth__contacts .sixth4 {
-        grid-row: 4; /* Place on the fourth row */
-        grid-column: 1; /* First column */
-    }
+.sixth__contacts .sixth5 {
+    grid-area: fifth;
+}
 
-    .sixth__contacts .sixth5 {
-        grid-row: 4; /* Place on the fourth row */
-        grid-column: 2; /* Second column */
-    }
-
-    .sixth__contacts .sixth6 {
-        grid-row: 2; /* Place on the second row */
-        grid-column: 1 / span 2; /* Span across both columns */
-    }
+.sixth__contacts .sixth6 {
+    grid-area: sixth;
+}
 
     .seventh {
         border-radius: 1rem;
