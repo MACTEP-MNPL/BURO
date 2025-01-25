@@ -20,11 +20,11 @@ html {
     transition-duration: .3s;
     box-sizing: border-box;
 
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 p {
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 ::selection {
