@@ -23,6 +23,10 @@ html {
     font-family: Inter, sans-serif;
 }
 
+p {
+    font-family: Inter, sans-serif;
+}
+
 ::selection {
     background-color: #ffd36b; /* Yellow color */
     color: white; /* Optional: Set the text color */
@@ -987,6 +991,7 @@ footer {
         display: -ms-grid;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         -webkit-align-items: center;
         align-items: center;
         gap: 10px;
@@ -999,43 +1004,24 @@ footer {
 
     .sixth__cell.yellow.padding {
         padding: 1rem;
+
+        grid-column: span 2;
+
+        
     }
 
-    .sixth__contacts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-        "third third"
-        "sixth sixth"
-        "first second"
-        "fourth fifth";
-    gap: 10px;
-    width: 100%;
-}
+    .sixth__cell.sixth4 {
+        display: none;
+    }
 
-.sixth__contacts .sixth1 {
-    grid-area: first;
-}
+    .sixth__cell.sixth5 {
+        display: none;
+    }
 
-.sixth__contacts .sixth2 {
-    grid-area: second;
-}
 
-.sixth__contacts .sixth3 {
-    grid-area: third;
-}
-
-.sixth__contacts .sixth4 {
-    grid-area: fourth;
-}
-
-.sixth__contacts .sixth5 {
-    grid-area: fifth;
-}
-
-.sixth__contacts .sixth6 {
-    grid-area: sixth;
-}
+    .sixth6 {
+        display: none;
+    }
 
     .seventh {
         border-radius: 1rem;
